@@ -44,13 +44,13 @@ function App() {
         <Route render={({ location }) => (
           <Switch>
 
-            <Route exact path="/" >
+            <Route exact path="/portfolio-react/" >
               <ContentSectionsBar switchMainScreen={switchMainScreen} updateHeaderInfo={updateHeaderInfo}/>
               <MainScreen rectStyle={mainScreenData.rectStyle} image={mainScreenData.image} video={mainScreenData.video} switchMainScreen={switchMainScreen}
                 isHeaderHidden={isHeaderHidden} toggleHeader={toggleHeader} updateHeaderInfo={updateHeaderInfo}/>
             </Route>
 
-            <Route path="/resume">
+            <Route path="/portfolio-react/resume">
               <Resume updateHeaderInfo={updateHeaderInfo}/>
             </Route>
 
