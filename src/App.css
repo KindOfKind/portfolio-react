@@ -1,0 +1,26 @@
+.App {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  min-height: 100vh;
+  background-color: #101319;
+  background-image: url("./Public/PortfBG.png");
+  background-size: cover;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.App::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 12px;
+}
+
+.App::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}

@@ -1,0 +1,84 @@
+.container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.55);
+    /* box-shadow: 0px 1px 1px 2px rgb(168, 200, 255), 0px 4px 5px 3px rgb(10, 19, 32); */
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.separator {
+    width: 100%;
+    margin: 5px 0px;
+    margin-top: 0px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.558);
+}
+
+.prompt {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    height: 100%;
+    margin-left: 100px;
+    margin-top: 4px;   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.prompt > * {
+    color:rgb(195, 190, 227);
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 21px;
+    text-decoration: none;
+    transition: 0.2s;
+    z-index: 100;
+}
+
+@media (max-width: 720px) {
+    .prompt > * {
+      display: none;
+    }
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    height: 100%;
+    margin-left:auto;
+    margin-right: 2vw;
+    margin-top: 4px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+.navButtons > * {
+    margin-right: 30px;
+    color:rgb(143, 142, 151);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.2s;
+    z-index: 100;
+}
+
+.navButtons > *:hover {
+    color: rgb(184, 174, 255);
+    padding-bottom: 5px;
+}

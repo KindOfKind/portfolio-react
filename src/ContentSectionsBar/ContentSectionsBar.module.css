@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 20px;
+    z-index: 10;
+}
+
+.subContainer {
+    display: block;
+    position: absolute;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.subContainer::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 12px;
+}
+
+.subContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+.subContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
