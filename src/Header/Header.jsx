@@ -13,8 +13,8 @@ export default function Header(props) {
 
                     <div className={styles.navButtons}>
                         <a href="javascript:void(0)" onClick={props.hideMainScreen}>Обновить плеер</a>
-                        <Link to="/">Главная</Link>
-                        <Link to="/resume">Резюме</Link>
+                        <Link to="portfolio-react/">Главная</Link>
+                        <Link to="portfolio-react/resume">Резюме</Link>
                     </div>
                 </div>
                 <div className={styles.separator}></div>
