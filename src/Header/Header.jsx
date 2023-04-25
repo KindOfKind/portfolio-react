@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Header.module.css'
-import { Link, BrowserRouter } from 'react-router-dom'
+import { Link, BrowserRouter, HashRouter } from 'react-router-dom'
 
 export default function Header(props) {
     if (!props.isHeaderHidden) {
@@ -13,8 +13,8 @@ export default function Header(props) {
 
                     <div className={styles.navButtons}>
                         <a href="javascript:void(0)" onClick={props.hideMainScreen}>Обновить плеер</a>
-                        <Link to="portfolio-react/">Главная</Link>
-                        <Link to="portfolio-react/resume">Резюме</Link>
+                        <Link to="/">Главная</Link>
+                        <Link to="/resume">Резюме</Link>
                     </div>
                 </div>
                 <div className={styles.separator}></div>

@@ -3,7 +3,7 @@ import './App.css';
 import ContentSectionsBar from './ContentSectionsBar/ContentSectionsBar';
 import Header from './Header/Header';
 import MainScreen from './MainScreen/MainScreen';
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router, HashRouter } from 'react-router-dom';
 import Resume from './Resume/Resume';
 
 function App() {
@@ -38,26 +38,53 @@ function App() {
 
   return (
     <div className="App" >
-      <Router>
+      <HashRouter basename="/portfolio-react">
       <Header hideMainScreen={hideMainScreen} headerInfo={headerInfo} isHeaderHidden={isHeaderHidden} toggleHeader={toggleHeader} />
 
         <Route render={({ location }) => (
           <Switch>
 
-            <Route exact path="/portfolio-react/" >
+            <Route exact path="/" >
               <ContentSectionsBar switchMainScreen={switchMainScreen} updateHeaderInfo={updateHeaderInfo}/>
               <MainScreen rectStyle={mainScreenData.rectStyle} image={mainScreenData.image} video={mainScreenData.video} switchMainScreen={switchMainScreen}
                 isHeaderHidden={isHeaderHidden} toggleHeader={toggleHeader} updateHeaderInfo={updateHeaderInfo}/>
             </Route>
 
-            <Route path="/portfolio-react/resume">
+            <Route path="/resume">
               <Resume updateHeaderInfo={updateHeaderInfo}/>
             </Route>
 
           </Switch>
         )} />
-      </Router>
+      </HashRouter>
     </div>
+
+
+
+
+
+
+    // <div className="App" >
+    //   <Router>
+    //   <Header hideMainScreen={hideMainScreen} headerInfo={headerInfo} isHeaderHidden={isHeaderHidden} toggleHeader={toggleHeader} />
+
+    //     <Route render={({ location }) => (
+    //       <Switch>
+
+    //         <Route exact path="/portfolio-react/" >
+    //           <ContentSectionsBar switchMainScreen={switchMainScreen} updateHeaderInfo={updateHeaderInfo}/>
+    //           <MainScreen rectStyle={mainScreenData.rectStyle} image={mainScreenData.image} video={mainScreenData.video} switchMainScreen={switchMainScreen}
+    //             isHeaderHidden={isHeaderHidden} toggleHeader={toggleHeader} updateHeaderInfo={updateHeaderInfo}/>
+    //         </Route>
+
+    //         <Route path="/portfolio-react/resume">
+    //           <Resume updateHeaderInfo={updateHeaderInfo}/>
+    //         </Route>
+
+    //       </Switch>
+    //     )} />
+    //   </Router>
+    // </div>
   );
 }
 
