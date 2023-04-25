@@ -8,7 +8,7 @@ export default function Resume(props) {
 
     return (
         <div className={styles.container}>
-            <img className={styles.background} src="/PortfResumeBG1.png" alt="Фон" />
+            <img className={styles.background} src="PortfResumeBG1.png" alt="Фон" />
         </div>
     );
 }

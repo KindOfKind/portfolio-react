@@ -73,7 +73,7 @@ export default function MainScreen(props) {
                 setScreen1Info({ ...screen1Info, width: '0px', transition: '1s' });
                 setTimeout(() => {
                     setScreen1Info(nonDisplayState);
-                    setScreen2Info({ isActive: true, height: 'auto', width: '100%', top: '0px', left: '0px', transition: '1s, z-index 0s', zIndex: '1', backgroundImage: './MainPageDefault.png' });
+                    setScreen2Info({ isActive: true, height: 'auto', width: '100%', top: '0px', left: '0px', transition: '1s, z-index 0s', zIndex: '1', backgroundImage: 'MainPageDefault.png' });
                     setContainerStyle({ background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);' })
                 }, 1000);
             }
@@ -81,7 +81,7 @@ export default function MainScreen(props) {
                 setScreen2Info({ ...screen2Info, width: '0px', transition: '1s' });
                 setTimeout(() => {
                     setScreen2Info(nonDisplayState);
-                    setScreen1Info({ isActive: true, height: 'auto', width: '100%', top: '0px', left: '0px', transition: '1s, z-index 0s', zIndex: '1', backgroundImage: './MainPageDefault.png' });
+                    setScreen1Info({ isActive: true, height: 'auto', width: '100%', top: '0px', left: '0px', transition: '1s, z-index 0s', zIndex: '1', backgroundImage: 'MainPageDefault.png' });
                 }, 1000);
             }
         }
