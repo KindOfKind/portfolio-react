@@ -43,11 +43,12 @@
 
     position: absolute;
     display: flex;
-    justify-content: start;
+    align-items: start;
+    flex-direction:column;
     /* bottom: 250px; */
     /* left: 134px; */
     /* width: calc(100% - 134); */
-    bottom: 6%;
+    bottom: 4%;
     left: 9%;
     width: calc(100% - 9%);
     font-size: 24px;
@@ -69,6 +70,7 @@
 @media (max-width: 900px) {
     .youtubeVideoContainer {
         font-size: 19px;
+        bottom: 3%;
     }
 }
 

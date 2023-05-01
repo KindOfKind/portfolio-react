@@ -66,14 +66,18 @@ export default function ContentSectionsBar(props) {
             switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 
 
-            <ContentIcon title={'My Site'}
+            <ContentIcon title={'My Web App'}
             
                 imagesSources={['videos/Site/Main.png', 'videos/Site/Menus.png', 'videos/Site/CardsReview.png',
                 'videos/Site/CardsEditing.png', 'videos/Site/Comments.png']}
                 videosSources={['videos/Site/Main.mp4', 'videos/Site/Menus.mp4', 'videos/Site/CardsReview.mp4',
                     'videos/Site/CardsEditing.mp4', 'videos/Site/Comments.mp4']}
                 
-                    prompts={['', '', '', '', '', '', '', '', '', '']}
+                    prompts={['Моё веб-приложение для изучения языков по манге и комиксам. Просмотр и редактирование карточек со словами и грамматикой.',
+                    'Просмотр секций: профиль, изученные карточки, коллекция манги.',
+                    'Анимации карточек со словами и грамматикой.',
+                    'Открытие манги. Создание прямоугольных областей поверх изображений и добавление к ним карточек.',
+                    'Секция с комментариями: добавление комментариев, ответ на сообщения, просмотр чужих профилей.', '', '', '', '', '']}
                 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 

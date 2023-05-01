@@ -11,7 +11,9 @@ export default function Resume(props) {
             <img className={styles.background} src="PortfResumeBG1.png" alt="Фон" />
 
             <div className={styles.youtubeVideoContainer}>
-               <a href="https://www.youtube.com/playlist?list=PLOIAXDYXITiQWNSZtu4nB8t7J-KHXhHi4" target="_blank">Альбом со всеми видео.</a>
+               <a href="https://youtube.com/playlist?list=PLENdZm7P-ZaiqD7HuvIX104i4cop8HgNH" target="_blank">Альбом со всеми видео.</a>
+               <br/>
+               <a href="https://youtu.be/J1ihiuToFOU" target="_blank">Развлекательный видеоролик по игре PAS.</a>
             </div>
         </div>
     );
