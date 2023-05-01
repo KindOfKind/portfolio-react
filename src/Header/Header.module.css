@@ -78,6 +78,10 @@
     z-index: 100;
 }
 
+.navButtons > *:visited {
+    color:rgb(143, 142, 151);
+}
+
 .navButtons > *:hover {
     color: rgb(184, 174, 255);
     padding-bottom: 5px;

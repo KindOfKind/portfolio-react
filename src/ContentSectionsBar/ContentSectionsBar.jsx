@@ -12,36 +12,59 @@ export default function ContentSectionsBar(props) {
 
             <div className={styles.subContainer}>
 
-            <ContentIcon title={'Labyrinth Game'}
+            <ContentIcon title={'Generative Hell'}
             
-                imagesSources={['videos/LabyrinthGame/Menu.jpg', 'videos/LabyrinthGame/Walk.jpg', 'videos/LabyrinthGame/Walls.jpg',
-                'videos/LabyrinthGame/Bear.jpg']}
-                videosSources={['videos/LabyrinthGame/Menu.mp4', 'videos/LabyrinthGame/Walk.mp4', 'videos/LabyrinthGame/Walls.mp4',
-                    'videos/LabyrinthGame/Bear.mp4']}
+                imagesSources={['videos/prevs/GH_1.png', 'videos/prevs/GH_2.png', 'videos/prevs/GH_3.png']}
+                videosSources={['videos/GH_1.mp4', 'videos/GH_2.mp4', 'videos/GH_3.mp4']}
 
-                prompts={['A very long prompt that will tell a lot about how wrong your ways of living are', 'prompt2', 'prompt3', 'prompt4', '', '']}
+                prompts={['FPS Rougelite "Generative Hell". Демонстрация сделанных мной ассетов.',
+                'Механики передвижения, процедурные анимации, компоненты персонажа с множеством характеристик.',
+                'HUD, активация скиллов.']}
 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 
-            <ContentIcon title={'Mini Games'}
+            <ContentIcon title={'Phantom Art Sequence'}
             
-                imagesSources={['videos/MiniGames/LasersImg.png', 'videos/MiniGames/LabyrinthImg.png', 'videos/MiniGames/BombImg.png',
-                'videos/MiniGames/RobotImg.png', 'videos/MiniGames/Cannons.png']}
-                videosSources={['videos/MiniGames/Lasers.mp4', 'videos/MiniGames/Labyrinth.mp4', 'videos/MiniGames/Bomb.mp4',
-                    'videos/MiniGames/Robot.mp4', 'videos/MiniGames/Cannons.mp4']}
+                imagesSources={['videos/prevs/PAS_1.png', 'videos/prevs/PAS_2.png']}
+                videosSources={['videos/PAS_1.mp4', 'videos/PAS_2.mp4']}
 
-                prompts={['', '', '', '', '', '', '', '', '', '']}
+                prompts={['Платформер-головоломка PAS. Диалоги, способности, осмотр карты. Ссылка на видео по игре в разделе "Резюме".',
+                'Противники из первых четырёх уровней.', '', '', '', '', '', '', '', '']}
+                
+                switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
+
+            <ContentIcon title={'IWA'}
+            
+                imagesSources={['videos/prevs/IWA_1.png', 'videos/prevs/IWA_2.png', 'videos/prevs/IWA_3.png', 'videos/prevs/IWA_4.png']}
+                videosSources={['videos/IWA_1.mp4', 'videos/IWA_2.mp4', 'videos/IWA_3.mp4', 'videos/IWA_4.mp4']}
+                
+                prompts={['Многопользовательский хоррор-шутер Inhuman Woods Action. Первый монстр.',
+                'Второй монстр и зомби.',
+                'Лут, обмен, открытие дверей карточками, условие победы.',
+                'Лобби, смотровая вышка, прожектор, генератор, эмоции, анимации от третьего лица.', '', '', '', '', '', '']}
                 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 
             <ContentIcon title={'Other Games'}
             
-                imagesSources={['artPictures/AdminRoom.png', 'artPictures/FA.png', 'artPictures/MangaPage1.png']}
-                videosSources={['', '', '']}
+                imagesSources={['videos/prevs/MiniGames_1.png', 'videos/prevs/MiniGames_2.png', 'videos/prevs/MiniGames_3.png']}
+                videosSources={['videos/MiniGames_1.mp4', 'videos/MiniGames_2.mp4', 'videos/MiniGames_3.mp4', 'videos/Labyrinth_1.mp4', '', '', '', '', '']}
                 
-                prompts={['', '', '', '', '', '', '', '', '', '']}
+                prompts={['Мой первый проект на UE4. 3D модель робота, анимации, мини-игра с лазерами.',
+                'Мини-игра с пушками, мини-игра с поиском подарков (недоделанная), подсчёт очков команд.',
+                'Мини-игра с обезвреживанием бомбы, подбор предметов, инвентарь.', '', '', '', '', '', '', '']}
                 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
+
+            <ContentIcon title={'My Drawings'}
+            
+                imagesSources={['artPictures/MyDrawings.png']}
+                videosSources={[]}
+                
+                prompts={['Мои рисунки.', '', '', '', '', '', '', '', '', '']}
+            
+            switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
+
 
             <ContentIcon title={'My Site'}
             
@@ -51,18 +74,6 @@ export default function ContentSectionsBar(props) {
                     'videos/Site/CardsEditing.mp4', 'videos/Site/Comments.mp4']}
                 
                     prompts={['', '', '', '', '', '', '', '', '', '']}
-                
-                switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
-
-            <ContentIcon title={'My drawings'}
-            
-                imagesSources={[
-                    'artPictures/AdminRoom.png', 'artPictures/FA.png', 'artPictures/MangaPage1.png', 'artPictures/16-2.png',
-                    'artPictures/17-2.png', 'artPictures/18-2.png', 'artPictures/19-2.png', 'artPictures/20.png', 'artPictures/21.png'
-                ]}
-                videosSources={['', '', '', '', '', '', '', '', '']}
-                
-                prompts={['', '', '', '', '', '', '', '', '', '']}
                 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 

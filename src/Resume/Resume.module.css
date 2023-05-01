@@ -1,11 +1,15 @@
+@keyframes ShowWithDelay {
+    0% { opacity: 0}
+    80% { opacity: 0}
+    100%   { opacity: 1}
+  }
+
 .container {
-    position: absolute;
     display: flex;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    overflow-y: scroll;
     color: white;
     /* background-image: url("../Public/PortfResumeBG1.png");
     background-size: cover; */
@@ -13,7 +17,63 @@
 }
 
 .background {
-    position: absolute;
     width: 100%;
-    overflow-y: scroll;
+}
+
+.background::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 12px;
+  }
+  
+  .background::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+  }
+  
+  .background::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.youtubeVideoContainer {
+    animation: ShowWithDelay 6s;
+
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    /* bottom: 250px; */
+    /* left: 134px; */
+    /* width: calc(100% - 134); */
+    bottom: 6%;
+    left: 9%;
+    width: calc(100% - 9%);
+    font-size: 24px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    z-index: 110;
+}
+
+.youtubeVideoContainer a:link, a:visited {
+    text-decoration: none;
+    color: rgb(39, 115, 197);
+}
+
+.youtubeVideoContainer a:hover {
+    text-decoration:underline;
+    color: rgb(111, 194, 224);
+}
+
+@media (max-width: 900px) {
+    .youtubeVideoContainer {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 690px) {
+    .youtubeVideoContainer {
+        font-size: 15px;
+    }
 }
