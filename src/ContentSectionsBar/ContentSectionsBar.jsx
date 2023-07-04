@@ -48,12 +48,13 @@ export default function ContentSectionsBar(props) {
 
             <ContentIcon title={'Other Games'}
             
-                imagesSources={['videos/prevs/MiniGames_1.png', 'videos/prevs/MiniGames_2.png', 'videos/prevs/MiniGames_3.png']}
+                imagesSources={['videos/prevs/MiniGames_1.png', 'videos/prevs/MiniGames_2.png', 'videos/prevs/MiniGames_3.png', 'videos/prevs/Labyrinth_1.png']}
                 videosSources={['videos/MiniGames_1.mp4', 'videos/MiniGames_2.mp4', 'videos/MiniGames_3.mp4', 'videos/Labyrinth_1.mp4', '', '', '', '', '']}
                 
                 prompts={['Мой первый проект на UE4. 3D модель робота, анимации, мини-игра с лазерами.',
                 'Мини-игра с пушками, мини-игра с поиском подарков (недоделанная), подсчёт очков команд.',
-                'Мини-игра с обезвреживанием бомбы, подбор предметов, инвентарь.', '', '', '', '', '', '', '']}
+                'Мини-игра с обезвреживанием бомбы, подбор предметов, инвентарь.',
+                'Многопользовательская игра, в которой игроки должны восстановить невидимый лабиринт раньше соперников.', '', '', '', '', '', '']}
                 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 
