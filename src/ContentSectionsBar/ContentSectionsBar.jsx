@@ -12,14 +12,15 @@ export default function ContentSectionsBar(props) {
 
             <div className={styles.subContainer}>
 
-            <ContentIcon title={'Generative Hell'}
+            <ContentIcon title={'Hell Over Me'}
             
-                imagesSources={['videos/prevs/GH_1.png', 'videos/prevs/GH_2.png', 'videos/prevs/GH_3.png']}
-                videosSources={['videos/GH_1.mp4', 'videos/GH_2.mp4', 'videos/GH_3.mp4']}
+                imagesSources={['videos/prevs/GH_1.png', 'videos/prevs/GH_2.png', 'videos/prevs/GH_3.png', 'videos/prevs/GH_4.png']}
+                videosSources={['videos/GH_1.mp4', 'videos/GH_2.mp4', 'videos/GH_3.mp4', 'videos/GH_4.mp4']}
 
-                prompts={['FPS Rougelite "Generative Hell". Демонстрация сделанных мной ассетов.',
+                prompts={['FPS Rougelike "Hell Over Me". Демонстрация сделанных мной ассетов.',
                 'Механики передвижения, процедурные анимации, компоненты персонажа с множеством характеристик.',
-                'HUD, активация скиллов.']}
+                'HUD, активация скиллов, сражение с боссом.',
+                'Тотем с модификаторами персонажа игрока, анимация перезарядки бонусом.']}
 
                 switchMainScreen={props.switchMainScreen} updateHeaderInfo={props.updateHeaderInfo}/>
 
