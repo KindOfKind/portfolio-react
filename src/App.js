@@ -7,12 +7,12 @@ import { Switch, Route, BrowserRouter as Router, HashRouter } from 'react-router
 import Resume from './Resume/Resume';
 
 function App() {
-  const defaultMainScreenData = { rectStyle: { height: '0px', width: '0px', top: '0px', left: '0px' }, image: './MainPageDefault.png', video: '' };
+  const defaultMainScreenData = { rectStyle: { height: '0px', width: '0px', top: '0px', left: '0px' }, image: '', video: 'videos/Startup_Overview.mp4' };
   const [mainScreenData, setMainScreenData] = useState(defaultMainScreenData);
   const [isHeaderHidden, setIsHeaderHidden] = useState(false);
   const [headerInfo, setHeaderInfo] = useState( { prompt: 'Здесь отображаются подсказки. Если только у вашего устройства не маленький экран...'} );
   
-  const switchMainScreen = (rectStyle = defaultMainScreenData, image = './MainPageDefault.png', video = '') => {
+  const switchMainScreen = (rectStyle = defaultMainScreenData, image = '', video = 'videos/Startup_Overview.mp4') => {
     setMainScreenData({ rectStyle, image, video });
   }
 
